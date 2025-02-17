@@ -3,3 +3,4 @@ broker-service/brokerApp
 front-end/frontApp
 logger-service/loggerApp
 mail-service/mailerApp
+listener-service/listenerApp

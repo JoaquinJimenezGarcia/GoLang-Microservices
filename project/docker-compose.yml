@@ -87,3 +87,11 @@ services:
       replicas: 1
     volumes:
       - /db-data/rabbitmq/:/var/lib/rabbitmq/
+  listener-service:
+    build:
+      context: ./../listener-service
+      dockerfile: ./../listener-service/listener-service.dockerfile
+    restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
